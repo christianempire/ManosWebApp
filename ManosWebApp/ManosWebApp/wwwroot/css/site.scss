@@ -1,0 +1,115 @@
+﻿/**
+    Fonts
+*/
+
+@font-face {
+    font-family: tutanocc;
+    src: url("../fonts/tutano_cc_v2.ttf");
+}
+
+@font-face {
+    font-family: theboldfont;
+    src: url("../fonts/theboldfont.ttf");
+}
+
+@font-face {
+    font-family: lane;
+    src: url("../fonts/LANENAR_.ttf");
+}
+
+@font-face {
+    font-family: pangram-regular;
+    src: url("../fonts/Pangram-Regular.otf");
+}
+
+@font-face {
+    font-family: pangram-light;
+    src: url("../fonts/Pangram-Light.otf");
+}
+
+/**
+    Base
+*/
+
+// Some html base styles
+html {
+    overflow-x: hidden;
+}
+
+// Disable iOS styles
+input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+
+/**
+    Variables
+*/
+
+$manosBlack: #27495f;
+$manosBlue: #1bbec6;
+$manosGreen: #a0be60;
+$manosRed: #ff5a5a;
+$manosYellow: #ffd280;
+$manosGray: #808080;
+$manosLightGray: #c5c5c5;
+
+/**
+    Mixins
+*/
+
+@mixin titles() {
+    h1, h2, h3 {
+        text-align: center;
+        font-weight: bold;
+        font-family: theboldfont;
+    }
+
+    h4 {
+        text-align: left;
+        font-weight: bold;
+        font-family: theboldfont;
+    }
+
+    h4 {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 3em;
+    }
+
+    h1 {
+        font-size: 4em;
+    }
+
+    @media(max-width: 768px) {
+        h4 {
+            font-size: 1.5em;
+        }
+
+        h3 {
+            font-size: 2em;
+        }
+
+        h2 {
+            font-size: 3em;
+        }
+
+        h1 {
+            font-size: 3em;
+        }
+    }
+}
+
+/**
+    Project stylesheets
+*/
+
+@import "../../views/home/index";
