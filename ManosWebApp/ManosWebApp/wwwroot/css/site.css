@@ -202,7 +202,7 @@ input {
           transition: background-color 0.1s linear; }
           #home #home-sidebar ul li.navbar-button-login:hover {
             background-color: #0929BA; }
-  #home .home-content-wrapper {
+  #home #home-content-wrapper {
     display: inline-block;
     float: left;
     position: absolute;
@@ -213,166 +213,166 @@ input {
     overflow-x: hidden;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch; }
-    #home .home-content-wrapper #start {
+    #home #home-content-wrapper #start {
       background-color: black;
       color: white; }
-      #home .home-content-wrapper #start .col-xs-6 {
+      #home #home-content-wrapper #start .col-xs-6 {
         padding-left: 0px;
         padding-right: 0px; }
-      #home .home-content-wrapper #start .col-md-3 {
+      #home #home-content-wrapper #start .col-md-3 {
         padding-left: 0px;
         padding-right: 0px; }
-      #home .home-content-wrapper #start .job-category-home {
+      #home #home-content-wrapper #start .job-category-home {
         cursor: pointer;
         transition: opacity 0.2s linear; }
-        #home .home-content-wrapper #start .job-category-home:hover {
+        #home #home-content-wrapper #start .job-category-home:hover {
           opacity: 0.5; }
-      #home .home-content-wrapper #start h1, #home .home-content-wrapper #start h2, #home .home-content-wrapper #start h3 {
+      #home #home-content-wrapper #start h1, #home #home-content-wrapper #start h2, #home #home-content-wrapper #start h3 {
         text-align: center;
         font-weight: bold;
         font-family: theboldfont; }
-      #home .home-content-wrapper #start h4 {
+      #home #home-content-wrapper #start h4 {
         text-align: left;
         font-weight: bold;
         font-family: theboldfont; }
-      #home .home-content-wrapper #start h4 {
+      #home #home-content-wrapper #start h4 {
         font-size: 1.5em; }
-      #home .home-content-wrapper #start h3 {
+      #home #home-content-wrapper #start h3 {
         font-size: 2em; }
-      #home .home-content-wrapper #start h2 {
+      #home #home-content-wrapper #start h2 {
         font-size: 3em; }
-      #home .home-content-wrapper #start h1 {
+      #home #home-content-wrapper #start h1 {
         font-size: 4em; }
       @media (max-width: 768px) {
-        #home .home-content-wrapper #start h4 {
+        #home #home-content-wrapper #start h4 {
           font-size: 1.5em; }
-        #home .home-content-wrapper #start h3 {
+        #home #home-content-wrapper #start h3 {
           font-size: 2em; }
-        #home .home-content-wrapper #start h2 {
+        #home #home-content-wrapper #start h2 {
           font-size: 3em; }
-        #home .home-content-wrapper #start h1 {
+        #home #home-content-wrapper #start h1 {
           font-size: 3em; } }
-    #home .home-content-wrapper #customers {
+    #home #home-content-wrapper #customers {
       background-color: black;
       color: white;
       padding-top: 50px;
       padding-bottom: 50px; }
-      #home .home-content-wrapper #customers .white-ruler {
+      #home #home-content-wrapper #customers .white-ruler {
         border-top: 3px solid white; }
-      #home .home-content-wrapper #customers .carousel .carousel-control.right {
+      #home #home-content-wrapper #customers .carousel .carousel-control.right {
         transform: translateX(100%); }
-      #home .home-content-wrapper #customers .carousel .carousel-control.left {
+      #home #home-content-wrapper #customers .carousel .carousel-control.left {
         transform: translateX(-100%); }
-      #home .home-content-wrapper #customers .carousel .carousel-indicators {
+      #home #home-content-wrapper #customers .carousel .carousel-indicators {
         transform: translateY(300%); }
       @media (max-width: 768px) {
-        #home .home-content-wrapper #customers .carousel .carousel-control.right {
+        #home #home-content-wrapper #customers .carousel .carousel-control.right {
           transform: translateX(0%); }
-        #home .home-content-wrapper #customers .carousel .carousel-control.left {
+        #home #home-content-wrapper #customers .carousel .carousel-control.left {
           transform: translateX(0%); } }
-      #home .home-content-wrapper #customers h1, #home .home-content-wrapper #customers h2, #home .home-content-wrapper #customers h3 {
+      #home #home-content-wrapper #customers h1, #home #home-content-wrapper #customers h2, #home #home-content-wrapper #customers h3 {
         text-align: center;
         font-weight: bold;
         font-family: theboldfont; }
-      #home .home-content-wrapper #customers h4 {
+      #home #home-content-wrapper #customers h4 {
         text-align: left;
         font-weight: bold;
         font-family: theboldfont; }
-      #home .home-content-wrapper #customers h4 {
+      #home #home-content-wrapper #customers h4 {
         font-size: 1.5em; }
-      #home .home-content-wrapper #customers h3 {
+      #home #home-content-wrapper #customers h3 {
         font-size: 2em; }
-      #home .home-content-wrapper #customers h2 {
+      #home #home-content-wrapper #customers h2 {
         font-size: 3em; }
-      #home .home-content-wrapper #customers h1 {
+      #home #home-content-wrapper #customers h1 {
         font-size: 4em; }
       @media (max-width: 768px) {
-        #home .home-content-wrapper #customers h4 {
+        #home #home-content-wrapper #customers h4 {
           font-size: 1.5em; }
-        #home .home-content-wrapper #customers h3 {
+        #home #home-content-wrapper #customers h3 {
           font-size: 2em; }
-        #home .home-content-wrapper #customers h2 {
+        #home #home-content-wrapper #customers h2 {
           font-size: 3em; }
-        #home .home-content-wrapper #customers h1 {
+        #home #home-content-wrapper #customers h1 {
           font-size: 3em; } }
-    #home .home-content-wrapper #partners {
+    #home #home-content-wrapper #partners {
       background-color: white;
       color: black;
       padding-top: 50px;
       padding-bottom: 50px; }
-      #home .home-content-wrapper #partners h1, #home .home-content-wrapper #partners h2, #home .home-content-wrapper #partners h3 {
+      #home #home-content-wrapper #partners h1, #home #home-content-wrapper #partners h2, #home #home-content-wrapper #partners h3 {
         text-align: center;
         font-weight: bold;
         font-family: theboldfont; }
-      #home .home-content-wrapper #partners h4 {
+      #home #home-content-wrapper #partners h4 {
         text-align: left;
         font-weight: bold;
         font-family: theboldfont; }
-      #home .home-content-wrapper #partners h4 {
+      #home #home-content-wrapper #partners h4 {
         font-size: 1.5em; }
-      #home .home-content-wrapper #partners h3 {
+      #home #home-content-wrapper #partners h3 {
         font-size: 2em; }
-      #home .home-content-wrapper #partners h2 {
+      #home #home-content-wrapper #partners h2 {
         font-size: 3em; }
-      #home .home-content-wrapper #partners h1 {
+      #home #home-content-wrapper #partners h1 {
         font-size: 4em; }
       @media (max-width: 768px) {
-        #home .home-content-wrapper #partners h4 {
+        #home #home-content-wrapper #partners h4 {
           font-size: 1.5em; }
-        #home .home-content-wrapper #partners h3 {
+        #home #home-content-wrapper #partners h3 {
           font-size: 2em; }
-        #home .home-content-wrapper #partners h2 {
+        #home #home-content-wrapper #partners h2 {
           font-size: 3em; }
-        #home .home-content-wrapper #partners h1 {
+        #home #home-content-wrapper #partners h1 {
           font-size: 3em; } }
-    #home .home-content-wrapper #about {
+    #home #home-content-wrapper #about {
       background-color: white;
       color: black;
       padding-top: 50px;
       padding-bottom: 50px; }
-      #home .home-content-wrapper #about .about-text {
+      #home #home-content-wrapper #about .about-text {
         text-align: center;
         font-size: 20px;
         margin-top: 15px;
         margin-bottom: 15px; }
-      #home .home-content-wrapper #about .black-ruler {
+      #home #home-content-wrapper #about .black-ruler {
         border-top: 3px solid black; }
       @media (max-width: 768px) {
-        #home .home-content-wrapper #about .about-text {
+        #home #home-content-wrapper #about .about-text {
           font-size: 15px; } }
-      #home .home-content-wrapper #about h1, #home .home-content-wrapper #about h2, #home .home-content-wrapper #about h3 {
+      #home #home-content-wrapper #about h1, #home #home-content-wrapper #about h2, #home #home-content-wrapper #about h3 {
         text-align: center;
         font-weight: bold;
         font-family: theboldfont; }
-      #home .home-content-wrapper #about h4 {
+      #home #home-content-wrapper #about h4 {
         text-align: left;
         font-weight: bold;
         font-family: theboldfont; }
-      #home .home-content-wrapper #about h4 {
+      #home #home-content-wrapper #about h4 {
         font-size: 1.5em; }
-      #home .home-content-wrapper #about h3 {
+      #home #home-content-wrapper #about h3 {
         font-size: 2em; }
-      #home .home-content-wrapper #about h2 {
+      #home #home-content-wrapper #about h2 {
         font-size: 3em; }
-      #home .home-content-wrapper #about h1 {
+      #home #home-content-wrapper #about h1 {
         font-size: 4em; }
       @media (max-width: 768px) {
-        #home .home-content-wrapper #about h4 {
+        #home #home-content-wrapper #about h4 {
           font-size: 1.5em; }
-        #home .home-content-wrapper #about h3 {
+        #home #home-content-wrapper #about h3 {
           font-size: 2em; }
-        #home .home-content-wrapper #about h2 {
+        #home #home-content-wrapper #about h2 {
           font-size: 3em; }
-        #home .home-content-wrapper #about h1 {
+        #home #home-content-wrapper #about h1 {
           font-size: 3em; } }
-    #home .home-content-wrapper #contact {
+    #home #home-content-wrapper #contact {
       background-color: white;
       color: black;
       padding-top: 50px;
       padding-bottom: 50px; }
-      #home .home-content-wrapper #contact p {
+      #home #home-content-wrapper #contact p {
         font-size: 18px; }
-      #home .home-content-wrapper #contact .btn-social {
+      #home #home-content-wrapper #contact .btn-social {
         text-decoration: none;
         width: 45px;
         height: 45px;
@@ -383,40 +383,40 @@ input {
         border-radius: 45px;
         font-size: 25px;
         transition: opacity 0.1s linear; }
-        #home .home-content-wrapper #contact .btn-social.fa-facebook {
+        #home #home-content-wrapper #contact .btn-social.fa-facebook {
           background-color: #3b5998; }
-        #home .home-content-wrapper #contact .btn-social.fa-instagram {
+        #home #home-content-wrapper #contact .btn-social.fa-instagram {
           background-color: #125688; }
-        #home .home-content-wrapper #contact .btn-social.fa-youtube {
+        #home #home-content-wrapper #contact .btn-social.fa-youtube {
           background-color: #bb0000; }
-        #home .home-content-wrapper #contact .btn-social:hover {
+        #home #home-content-wrapper #contact .btn-social:hover {
           opacity: 0.75; }
-      #home .home-content-wrapper #contact .centered-text {
+      #home #home-content-wrapper #contact .centered-text {
         text-align: center; }
-      #home .home-content-wrapper #contact h1, #home .home-content-wrapper #contact h2, #home .home-content-wrapper #contact h3 {
+      #home #home-content-wrapper #contact h1, #home #home-content-wrapper #contact h2, #home #home-content-wrapper #contact h3 {
         text-align: center;
         font-weight: bold;
         font-family: theboldfont; }
-      #home .home-content-wrapper #contact h4 {
+      #home #home-content-wrapper #contact h4 {
         text-align: left;
         font-weight: bold;
         font-family: theboldfont; }
-      #home .home-content-wrapper #contact h4 {
+      #home #home-content-wrapper #contact h4 {
         font-size: 1.5em; }
-      #home .home-content-wrapper #contact h3 {
+      #home #home-content-wrapper #contact h3 {
         font-size: 2em; }
-      #home .home-content-wrapper #contact h2 {
+      #home #home-content-wrapper #contact h2 {
         font-size: 3em; }
-      #home .home-content-wrapper #contact h1 {
+      #home #home-content-wrapper #contact h1 {
         font-size: 4em; }
       @media (max-width: 768px) {
-        #home .home-content-wrapper #contact h4 {
+        #home #home-content-wrapper #contact h4 {
           font-size: 1.5em; }
-        #home .home-content-wrapper #contact h3 {
+        #home #home-content-wrapper #contact h3 {
           font-size: 2em; }
-        #home .home-content-wrapper #contact h2 {
+        #home #home-content-wrapper #contact h2 {
           font-size: 3em; }
-        #home .home-content-wrapper #contact h1 {
+        #home #home-content-wrapper #contact h1 {
           font-size: 3em; } }
   @media (max-width: 768px) {
     #home .home-navbar .navbar-hamburguer {

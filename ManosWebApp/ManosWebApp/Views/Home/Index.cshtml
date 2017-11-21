@@ -2,6 +2,8 @@
     ViewData["Title"] = "Manos";
 }
 
+@model HomeViewModel
+
 <div id="home">
   <div class="home-navbar">
     <div class="navbar-hamburguer" onclick="$('#home-sidebar').toggleClass('show-sidebar')">
@@ -25,8 +27,8 @@
           <span>Únete</span>
         </li>
         @*<li class="navbar-button-login" ng-click="goToLogin()">
-            <span>Ingresa</span>
-        </li>*@
+              <span>Ingresa</span>
+          </li>*@
       </ul>
     </div>
   </div>
@@ -45,11 +47,11 @@
         <span>Únete</span>
       </li>
       @*<li class="navbar-button-login" ng-click="goToLogin()">
-          <span>Ingresa</span>
-      </li>*@
+            <span>Ingresa</span>
+        </li>*@
     </ul>
   </div>
-  <div class="home-content-wrapper">
+  <div id="home-content-wrapper">
     <div id="start">
       <div class="container-fluid">
         <div class="row">
@@ -58,12 +60,18 @@
           </div>
         </div>
         <div class="row">
-          @*<div class="col-xs-6 col-sm-3" ng-repeat="jobCategory in jobCategories">
-            <img class="img-responsive center-block job-category-home" 
-                 ng-src="{{jobCategory.imgPath}}" 
-                 alt="{{jobCategory.description}}" 
-                 ng-click="openQuickRequestModal(jobCategory.jobCategoryId)" />
-          </div>*@
+          <div class="col-xs-6 col-sm-3">
+            <img class="img-responsive center-block job-category-home" src="~/images/job-category-1@(this.Model.IsMobileBrowser ? "-min" : "").jpg" />
+          </div>
+          <div class="col-xs-6 col-sm-3">
+            <img class="img-responsive center-block job-category-home" src="~/images/job-category-2@(this.Model.IsMobileBrowser ? "-min" : "").jpg" />
+          </div>
+          <div class="col-xs-6 col-sm-3">
+            <img class="img-responsive center-block job-category-home" src="~/images/job-category-3@(this.Model.IsMobileBrowser ? "-min" : "").jpg" />
+          </div>
+          <div class="col-xs-6 col-sm-3">
+            <img class="img-responsive center-block job-category-home" src="~/images/job-category-4@(this.Model.IsMobileBrowser ? "-min" : "").jpg" />
+          </div>
         </div>
       </div>
     </div>
@@ -107,14 +115,14 @@
         </div>
         <div class="row">
           @*<div class="col-xs-12 col-sm-8 col-sm-offset-2">
-            <div uib-carousel active="activeCustomerSlide" interval="customerSlideInterval">
-              <div uib-slide ng-repeat="customer in customers" index="customer.customer_id">
-                <img class="img-responsive center-block" 
-                     ng-src="{{customer.img_path}}" 
-                     alt="{{customer.name}}" />
+              <div uib-carousel active="activeCustomerSlide" interval="customerSlideInterval">
+                <div uib-slide ng-repeat="customer in customers" index="customer.customer_id">
+                  <img class="img-responsive center-block"
+                       ng-src="{{customer.img_path}}"
+                       alt="{{customer.name}}" />
+                </div>
               </div>
-            </div>
-          </div>*@
+            </div>*@
         </div>
       </div>
     </div>

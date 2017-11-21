@@ -8,12 +8,16 @@ using ManosWebApp.Models;
 
 namespace ManosWebApp.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : BaseController
     {
         [Route("")]
         public IActionResult Index()
         {
-            return View();
+            var homeViewModel = new HomeViewModel();
+
+            homeViewModel.IsMobileBrowser = this.IsMobileBrowser;
+
+            return View(model: homeViewModel);
         }
 
         public IActionResult Error()
