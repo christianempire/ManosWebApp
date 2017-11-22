@@ -3,7 +3,7 @@
 }
 
 @model HomeViewModel
-
+<!-- Home -->
 <div id="home">
   <div class="home-navbar">
     <div class="navbar-hamburguer" onclick="$('#home-sidebar').toggleClass('show-sidebar')">
@@ -23,10 +23,10 @@
         <li class="navbar-button-red" onclick="$('#home-content-wrapper').scrollTo($('#customers'), 500)">
           <span>Clientes</span>
         </li>
-        <li class="navbar-button-yellow">
+        <li class="navbar-button-yellow" onclick="$('#home-join-modal-trigger').trigger('click')">
           <span>Únete</span>
         </li>
-        @*<li class="navbar-button-login" ng-click="goToLogin()">
+        @*<li class="navbar-button-login">
               <span>Ingresa</span>
           </li>*@
       </ul>
@@ -43,10 +43,10 @@
       <li class="navbar-button-red" onclick="$('#home-content-wrapper').scrollTo($('#customers'), 500); $('#home-sidebar').toggleClass('show-sidebar');">
         <span>Clientes</span>
       </li>
-      <li class="navbar-button-yellow" onclick="$('#home-sidebar').toggleClass('show-sidebar')">
+      <li class="navbar-button-yellow" onclick="$('#home-join-modal-trigger').trigger('click'); $('#home-sidebar').toggleClass('show-sidebar');">
         <span>Únete</span>
       </li>
-      @*<li class="navbar-button-login" ng-click="goToLogin()">
+      @*<li class="navbar-button-login">
             <span>Ingresa</span>
         </li>*@
     </ul>
@@ -61,16 +61,16 @@
         </div>
         <div class="row">
           <div class="col-xs-6 col-sm-3">
-            <img class="img-responsive center-block job-category-home" src="~/images/job-category-1@(this.Model.IsMobileBrowser ? "-min" : "").jpg" />
+            <img class="img-responsive job-category-home" alt="Hogas y oficinas" src="~/images/job-category-1@(this.Model.IsMobileBrowser ? "-min" : "").jpg" />
           </div>
           <div class="col-xs-6 col-sm-3">
-            <img class="img-responsive center-block job-category-home" src="~/images/job-category-2@(this.Model.IsMobileBrowser ? "-min" : "").jpg" />
+            <img class="img-responsive job-category-home" alt="Cuidado personal" src="~/images/job-category-2@(this.Model.IsMobileBrowser ? "-min" : "").jpg" />
           </div>
           <div class="col-xs-6 col-sm-3">
-            <img class="img-responsive center-block job-category-home" src="~/images/job-category-3@(this.Model.IsMobileBrowser ? "-min" : "").jpg" />
+            <img class="img-responsive job-category-home" alt="Mascotas" src="~/images/job-category-3@(this.Model.IsMobileBrowser ? "-min" : "").jpg" />
           </div>
           <div class="col-xs-6 col-sm-3">
-            <img class="img-responsive center-block job-category-home" src="~/images/job-category-4@(this.Model.IsMobileBrowser ? "-min" : "").jpg" />
+            <img class="img-responsive job-category-home" alt="Multi manos" src="~/images/job-category-4@(this.Model.IsMobileBrowser ? "-min" : "").jpg" />
           </div>
         </div>
       </div>
@@ -90,7 +90,7 @@
         <div class="row">
           <div class="col-xs-12 col-sm-10 col-sm-offset-1">
             <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/QZkJMb_Ava0" frameborder="0" allowfullscreen></iframe>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/QZkJMb_Ava0" frameborder="0" allowfullscreen></iframe>
             </div>
           </div>
           <div class="col-xs-12 about-text">
@@ -114,15 +114,25 @@
           </div>
         </div>
         <div class="row">
-          @*<div class="col-xs-12 col-sm-8 col-sm-offset-2">
-              <div uib-carousel active="activeCustomerSlide" interval="customerSlideInterval">
-                <div uib-slide ng-repeat="customer in customers" index="customer.customer_id">
-                  <img class="img-responsive center-block"
-                       ng-src="{{customer.img_path}}"
-                       alt="{{customer.name}}" />
-                </div>
+          <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+            <div class="owl-carousel owl-theme">
+              <div>
+                <img class="img-responsive" alt="Cliente 1" src="~/images/customer-1@(this.Model.IsMobileBrowser ? "-min" : "").png" />
               </div>
-            </div>*@
+              <div>
+                <img class="img-responsive" alt="Cliente 2" src="~/images/customer-2@(this.Model.IsMobileBrowser ? "-min" : "").png" />
+              </div>
+              <div>
+                <img class="img-responsive" alt="Cliente 3" src="~/images/customer-3@(this.Model.IsMobileBrowser ? "-min" : "").png" />
+              </div>
+              <div>
+                <img class="img-responsive" alt="Cliente 4" src="~/images/customer-4@(this.Model.IsMobileBrowser ? "-min" : "").png" />
+              </div>
+              <div>
+                <img class="img-responsive" alt="Cliente 5" src="~/images/customer-5@(this.Model.IsMobileBrowser ? "-min" : "").png" />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -151,3 +161,34 @@
     </div>
   </div>
 </div>
+<!-- /.home -->
+<!-- Home Join Modal -->
+<button id="home-join-modal-trigger" data-toggle="modal" data-target="#home-join-modal"></button>
+<div id="home-join-modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h3>¿QUIERES SER UN MANOS?</h3>
+      </div>
+      <div class="modal-body">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/4cWz9LdRjBw" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="more-info">
+
+        </div>
+      </div>
+      <div class="modal-footer">
+        Para más información manda un correo a <a href="mailto:contacto@manos.pe">contacto@manos.pe</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /.home-join-modal -->
+
+@section Scripts {
+  <script>
+    ko.applyBindings(new HomeViewModel());
+  </script>
+}

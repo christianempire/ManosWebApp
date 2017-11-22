@@ -280,30 +280,30 @@
                 border-top: 3px solid white;
             }
 
-            .carousel {
-                .carousel-control {
-                    &.right {
-                        transform: translateX(100%);
+            .owl-carousel {
+                .owl-nav {
+                    margin-top: 0;
+
+                    .owl-prev {
+                        position: absolute;
+                        top: 50%;
+                        left: 0;
+                        transform: translateY(-50%);
+                        background-color: transparent;
+                        padding: 0;
+                        margin: 0;
+                        font-size: 30px;
                     }
 
-                    &.left {
-                        transform: translateX(-100%);
-                    }
-                }
-
-                .carousel-indicators {
-                    transform: translateY(300%);
-                }
-
-                @media(max-width: 768px) {
-                    .carousel-control {
-                        &.right {
-                            transform: translateX(0%);
-                        }
-
-                        &.left {
-                            transform: translateX(0%);
-                        }
+                    .owl-next {
+                        position: absolute;
+                        top: 50%;
+                        right: 0;
+                        transform: translateY(-50%);
+                        background-color: transparent;
+                        padding: 0;
+                        margin: 0;
+                        font-size: 30px;
                     }
                 }
             }
@@ -422,4 +422,24 @@
             }
         }
     }
+}
+
+#home-join-modal-trigger {
+    display: none;
+}
+
+#home-join-modal {
+    .modal-dialog {
+        .modal-content {
+            .modal-body {
+                padding: 0;
+            }
+
+            .modal-footer {
+                text-align: center;
+            }
+        }
+    }
+
+    @include titles();
 }

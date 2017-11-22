@@ -1,0 +1,67 @@
+﻿/// <reference path="../../wwwroot/css/site.scss" />
+
+#terms {
+    padding: 30px 0;
+
+    .header {
+        display: inline-block;
+        float: left;
+        height: 50px;
+
+        .manos-logo {
+            display: inline-block;
+            float: right;
+            width: 165px;
+            height: 35px;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+
+            img {
+                height: 500%;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translateX(-50%) translateY(-50%);
+            }
+        }
+
+        .terms-title {
+            display: inline-block;
+            float: left;
+            margin: 0;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+
+    p {
+        text-align: justify;
+    }
+
+    @media(max-width: 768px) {
+        padding: 15px 0;
+
+        .header {
+            height: auto;
+
+            .manos-logo {
+                width: 100%;
+                top: 0;
+                transform: none;
+                margin-bottom: 15px;
+            }
+
+            .terms-title {
+                width: 100%;
+                top: 0;
+                transform: none;
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    @include titles();
+}

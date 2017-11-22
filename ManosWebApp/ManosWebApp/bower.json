@@ -6,6 +6,7 @@
     "moment": "2.19.2",
     "angular": "v1.6.7-build.5500+sha.aa3f951",
     "knockout": "v3.4.2",
-    "jquery.scrollTo": "2.1.2"
+    "jquery.scrollTo": "2.1.2",
+    "owl.carousel": "owl-carousel2#2.2.1"
   }
 }

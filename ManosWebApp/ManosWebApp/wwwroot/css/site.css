@@ -259,17 +259,26 @@ input {
       padding-bottom: 50px; }
       #home #home-content-wrapper #customers .white-ruler {
         border-top: 3px solid white; }
-      #home #home-content-wrapper #customers .carousel .carousel-control.right {
-        transform: translateX(100%); }
-      #home #home-content-wrapper #customers .carousel .carousel-control.left {
-        transform: translateX(-100%); }
-      #home #home-content-wrapper #customers .carousel .carousel-indicators {
-        transform: translateY(300%); }
-      @media (max-width: 768px) {
-        #home #home-content-wrapper #customers .carousel .carousel-control.right {
-          transform: translateX(0%); }
-        #home #home-content-wrapper #customers .carousel .carousel-control.left {
-          transform: translateX(0%); } }
+      #home #home-content-wrapper #customers .owl-carousel .owl-nav {
+        margin-top: 0; }
+        #home #home-content-wrapper #customers .owl-carousel .owl-nav .owl-prev {
+          position: absolute;
+          top: 50%;
+          left: 0;
+          transform: translateY(-50%);
+          background-color: transparent;
+          padding: 0;
+          margin: 0;
+          font-size: 30px; }
+        #home #home-content-wrapper #customers .owl-carousel .owl-nav .owl-next {
+          position: absolute;
+          top: 50%;
+          right: 0;
+          transform: translateY(-50%);
+          background-color: transparent;
+          padding: 0;
+          margin: 0;
+          font-size: 30px; }
       #home #home-content-wrapper #customers h1, #home #home-content-wrapper #customers h2, #home #home-content-wrapper #customers h3 {
         text-align: center;
         font-weight: bold;
@@ -431,4 +440,116 @@ input {
       transition: padding-left 0.75s ease-in-out; }
     #home #home-sidebar.show-sidebar {
       left: 0; } }
+
+#home-join-modal-trigger {
+  display: none; }
+
+#home-join-modal .modal-dialog .modal-content .modal-body {
+  padding: 0; }
+
+#home-join-modal .modal-dialog .modal-content .modal-footer {
+  text-align: center; }
+
+#home-join-modal h1, #home-join-modal h2, #home-join-modal h3 {
+  text-align: center;
+  font-weight: bold;
+  font-family: theboldfont; }
+
+#home-join-modal h4 {
+  text-align: left;
+  font-weight: bold;
+  font-family: theboldfont; }
+
+#home-join-modal h4 {
+  font-size: 1.5em; }
+
+#home-join-modal h3 {
+  font-size: 2em; }
+
+#home-join-modal h2 {
+  font-size: 3em; }
+
+#home-join-modal h1 {
+  font-size: 4em; }
+
+@media (max-width: 768px) {
+  #home-join-modal h4 {
+    font-size: 1.5em; }
+  #home-join-modal h3 {
+    font-size: 2em; }
+  #home-join-modal h2 {
+    font-size: 3em; }
+  #home-join-modal h1 {
+    font-size: 3em; } }
+
+#terms {
+  padding: 30px 0; }
+  #terms .header {
+    display: inline-block;
+    float: left;
+    height: 50px; }
+    #terms .header .manos-logo {
+      display: inline-block;
+      float: right;
+      width: 165px;
+      height: 35px;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer; }
+      #terms .header .manos-logo img {
+        height: 500%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%); }
+    #terms .header .terms-title {
+      display: inline-block;
+      float: left;
+      margin: 0;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%); }
+  #terms p {
+    text-align: justify; }
+  @media (max-width: 768px) {
+    #terms {
+      padding: 15px 0; }
+      #terms .header {
+        height: auto; }
+        #terms .header .manos-logo {
+          width: 100%;
+          top: 0;
+          transform: none;
+          margin-bottom: 15px; }
+        #terms .header .terms-title {
+          width: 100%;
+          top: 0;
+          transform: none;
+          margin-bottom: 15px; } }
+  #terms h1, #terms h2, #terms h3 {
+    text-align: center;
+    font-weight: bold;
+    font-family: theboldfont; }
+  #terms h4 {
+    text-align: left;
+    font-weight: bold;
+    font-family: theboldfont; }
+  #terms h4 {
+    font-size: 1.5em; }
+  #terms h3 {
+    font-size: 2em; }
+  #terms h2 {
+    font-size: 3em; }
+  #terms h1 {
+    font-size: 4em; }
+  @media (max-width: 768px) {
+    #terms h4 {
+      font-size: 1.5em; }
+    #terms h3 {
+      font-size: 2em; }
+    #terms h2 {
+      font-size: 3em; }
+    #terms h1 {
+      font-size: 3em; } }
 
